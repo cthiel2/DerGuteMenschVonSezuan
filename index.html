@@ -16,11 +16,15 @@
     <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js" class="fullscreen" canvas="" keyboard-shortcuts="" vr-mode-ui="">
       <a-sky color="#ECECEC" material="" geometry="" scale="" position="" rotation="" visible=""></a-sky>
       <a-assets>
-        <a-asset-item id="buehne" src="theater.DAE"></a-asset-item>
+        <a-asset-item id="buehne" src="theater_ohne_Stuehle.DAE"></a-asset-item>
+        <a-asset-item id="StuehleUnten" src="Stuehle_unten.DAE"></a-asset-item>
+        <a-asset-item id="StuehleOben" src="Stuehle_oben.DAE"></a-asset-item>
         <a-asset-item id="Mensch" src="MenschVonSezuan.DAE"></a-asset-item>
         <a-asset-item id="bruecke" src="bruecke.DAE"></a-asset-item>
       </a-assets>
       <a-entity collada-model="#buehne" color="blue" position="0 0 0" rotation="-1.1459155902616465 0 1.1459155902616465" scale="10 10 10" visible="true" id="Theater"> </a-entity>
+      <a-entity collada-model="#StuehleUnten" position="0 0 0" rotation="0 0 0" scale="10 10 10" visible="true" id="StuehleUnten"> </a-entity>
+      <a-entity collada-model="#StuehleOben" position="0 0 0" rotation="0 0 0" scale="10 10 10" visible="true" id="StuehleOben"> </a-entity>
       <a-entity collada-model="#Mensch" position="8.89 7.26 5.5" rotation="0 -34.95042550298022 0" scale="0.7 0.7 0.7" visible="true" id="Mensch"></a-entity>
       <a-entity collada-model="#Mensch" position="13.27 15.54 -8.41" rotation="0 -115.7374746164263 0" scale="0.7 0.7 0.7" visible="true" id="Gott_1"></a-entity>
       <a-entity collada-model="#Mensch" position="15.14 16.38 0" rotation="0 44.69070802020421 0" scale="0.7 0.7 0.7" visible="true" id="Gott_2"></a-entity>
