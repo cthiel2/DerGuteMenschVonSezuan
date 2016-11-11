@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.0/aframe-inspector.min.js"></script>
+    <script src="https://aframe.io/releases/0.3.0/aframe-inspector.min.js"></script>
+  </head>
+
+  <body class="a-body aframe-inspector-opened">
+
+    <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js" class="fullscreen" canvas="" keyboard-shortcuts="" vr-mode-ui="">
+      <a-sky color="#ECECEC" material="" geometry="" scale="" position="" rotation="" visible=""></a-sky>
+      <a-assets>
+        <a-asset-item id="buehne" src="theater.DAE"></a-asset-item>
+        <a-asset-item id="Mensch" src="MenschVonSezuan.DAE"></a-asset-item>
+        <a-asset-item id="bruecke" src="bruecke.DAE"></a-asset-item>
+      </a-assets>
+      <a-entity collada-model="#buehne" color="blue" position="0 0 0" rotation="-1.1459155902616465 0 1.1459155902616465" scale="10 10 10" visible="true" id="Theater"> </a-entity>
+      <a-entity collada-model="#Mensch" position="8.89 7.26 5.5" rotation="0 -34.95042550298022 0" scale="0.7 0.7 0.7" visible="true" id="Mensch"></a-entity>
+      <a-entity collada-model="#Mensch" position="13.27 15.54 -8.41" rotation="0 -115.7374746164263 0" scale="0.7 0.7 0.7" visible="true" id="Gott_1"></a-entity>
+      <a-entity collada-model="#Mensch" position="15.14 16.38 0" rotation="0 44.69070802020421 0" scale="0.7 0.7 0.7" visible="true" id="Gott_2"></a-entity>
+      <a-entity collada-model="#Mensch" position="11.07 9.39 -13.25" rotation="0 -69.32789321082961 0" scale="0.7 0.7 0.7" visible="true" id="Gott_3"></a-entity>
+      <a-entity collada-model="#bruecke" position="18.83 4.07 -10.06" rotation="0 20.63 0" scale="3 3 3" visible="true" id="Bruecke"></a-entity>
+      <a-camera camera="active:true;near:0.01" position="-33.72 15.41 -2.8" rotation="0 -104.27831871380982 0" scale="1 1 1" visible="true" id="Kamera"></a-camera>
+      <!-- Hier ist die Kamera, aber ich weiß nicht ob sie so funktioniert. -->
+    </a-scene>
+  </body>
+</html>
