@@ -294,5 +294,57 @@
   <a-entity position="0 100 0" light="type:directional; intensity:1;" id="Sonne" visible="false"></a-entity>
 
   </a-scene>
+  
+ <!--
+ schrift?										 https://github.com/bryik/aframe-bmfont-text-component
+												 https://github.com/ngokevin/aframe-text-component
+												 https://github.com/mayognaise/aframe-html-shader
+												 https://github.com/maxkrieger/aframe-textwrap-component
+  Sound spielt von einer Quelle ab 				<a-sound src="src: url(click.mp3)" autoplay="false" position="0 2 5"></a-sound>
+ Sound beginnt auf ein Event					 <sound="src: url(ticklelaugh.mp3); on: click">
+Animation										<a-animation attribute="position"
+												begin="click"
+											   dur="10000"
+											   fill="forwards"
+											   from=" 0 180 0"
+											   to="0 360 0"
+											   repeat="0">
+licht dimmen und heller machen					 bei animation attribute="componentName.Syntax" also "light.intensity"						   
+wände durchsichtig 							 bei den wänden component material hinzufügen also < a-wand material="opacity: 1; transparent: true;"></a-wand> und <a-animation></a-animation> zwischen den entity-tags einfügen
+												<a-animation attribute="material.opacity"
+												begin="click"
+												delay="10000"
+											   dur="2000"
+											   fill="forwards"
+											   from="1"
+											   to="0"
+											   repeat="0">		 
+Cursor										    <a-entity cursor="fuse: true; fuseTimeout: 500"
+												position="0 0 -1"
+												geometry="primitive: ring"
+												material="color: black; shader: flat">
+Objekte gucken auf etwas 						<a-entity id="dog" geometry="primitive: box" material="src: dog.png"
+											  look-at="#squirrel"></a-entity>
+												<a-entity id="squirrel">
+												  <a-animation id="running" attribute="position" to="100 0 0"></a-animation>
+												</a-entity>
+  Zeitlicher Ablauf:
+  0:00 Eventhandler click auf vorhang
+  0:00-0:10 Audioclip "Vorher.mp3" mit normalen lichtern
+  0:10-0:15 licht geht aus vorhang auf
+  0:15-0:25 Spots gehen an Audioclip "variante1.mp3" und "gong.mp3" nacheinander spielen
+  0:25-0:55 Gespräch auf der Bühne eventuell Audioclip"Dialog.mp3"
+  0:55-1:15 auf die Bühne geführt und wände transparent 
+und so weiter  bla bla aber für samstag würds ja bis hier auch erstmal reichen
+  
+  
+zeiteinheit ist tick, also 60-90 pro sekunde
+  
+  
+
+  
+  
+  
+  -->
 </body>
 </html>
