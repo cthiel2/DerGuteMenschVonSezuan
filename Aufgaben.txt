@@ -1,18 +1,19 @@
 Noch zu machen ab 17.12.:
 
-0 Interaktivität							v/c/m	ENDE!!
-0 Kamerafahrten								m	Mitte Januar
-auf die Bühne								m	Mitte Januar
-0 Curser									c	Sofort
-1 Sound einsetzen							c	Anfang Januar
-Quellen zuweisen							c	Anfang Januar
-1 Sprechblasen erstellen					v	Anfang Januar
-1 Sprechblasen einfügen						m	Sobald Sp.bl. da	
-0 Figuren bewegen							c	Mitte Januar
-1 Licht an/aus								m/c	Mitte Januar
-1 Wände durchsichtig						c	Anfang Januar
-0 (Fluss)									m	Anfang Januar
-0 Kamera Sprung (zu einzelnen Figuren)		c	Mitte Januar
+0 Interaktivität              v/c/m	ENDE!!
+0 Kamerafahrten               m	Mitte Januar
+auf die Bühne                 m	Mitte Januar
+0 Cursor                      c	Sofort
+1 Sound einsetzen             c	Anfang Januar
+Quellen zuweisen              c	Anfang Januar
+1 Sprechblasen erstellen      v	Anfang Januar
+1 Sprechblasen einfügen       m	Sobald Sp.bl. da	
+0 Figuren bewegen             c	Mitte Januar
+1 Licht an/aus                m/c	Mitte Januar
+1 Wände durchsichtig          c	Anfang Januar
+0 (Fluss)                     m	Anfang Januar
+0 Kamera Sprung               c	Mitte Januar
+(zu einzelnen Figuren)		
 (bei girlgroup (Gerichtsszene) gucken oder anderen)
-Kamera auf Köpfe von Figuren				m	Sofort
-1 „Aladdin“ am Anfang						v	Anfang Januar
+Kamera auf Köpfe von Figuren  m	Sofort
+1 „Aladdin“ am Anfang         v	Anfang Januar
