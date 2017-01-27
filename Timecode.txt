@@ -1,0 +1,23 @@
+00.000 	- Hintergrundgeräusche
+02.500 	- Vorhang wird beleuchtet
+03.000 	- Banner wird durchsichtig
+09.000 	- Einleitungsmusik spielt
+	- Vorhang geht auf
+	- Bühnen-Beleuchtung geht an
+10.000 	- Wang dreht sich zum Publikum
+22.000 	- Geh-Animation (Wang) (bis 25.000)
+26.000 	- Wang beginnt zu reden
+26.000 	- Sprechblase 1
+30.000 	- Sprechblase 2
+34.000 	- Sprechblase 3
+38.000 	- Sprechblase 4
+43.000 	- Sprechblase 5
+49.000	- Wang geht nach hinten
+50.000 	- Kamera geht auf Bühne
+54.000	- Kamera dreht sich zum Publikum
+60.000 	- Sprechblase 6
+65.000 	- Bühne wird durchsichtig
+67.000 	- Wang dreht sich zur Wand
+72.000	- Wang dreht sich zu Göttern
+72.000	- Sprechblase 7
+81.000 	- Sprechblase 8
