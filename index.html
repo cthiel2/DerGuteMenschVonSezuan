@@ -82,8 +82,15 @@
                    dur="7000"
                    fill="forwards"
                    from="1.0"
-                   to="0.0"
-      ></a-animation>
+                   to="0.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   delay="250000"
+                   dur="10000"
+                   fill="forwards"
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
     </a-box>
     <a-box position="57 5 -24" id="links"scale="40 35.5 2.5" color="black" transparent="true">
       <a-animation attribute="material.opacity"
@@ -91,8 +98,15 @@
                    dur="7000"
                    fill="forwards"
                    from="1.0"
-                   to="0.0"
-      ></a-animation>
+                   to="0.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   delay="250000"
+                   dur="10000"
+                   fill="forwards"
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
     </a-box>
     <a-box position="57 5 24" id="rechts"scale="40 35.5 2.5" color="black" transparent="true">
       <a-animation attribute="material.opacity"
@@ -100,8 +114,15 @@
                    dur="7000"
                    fill="forwards"
                    from="1.0"
-                   to="0.0"
-      ></a-animation>
+                   to="0.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   delay="250000"
+                   dur="10000"
+                   fill="forwards"
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
     </a-box>
     <a-box position="75 5  0" id="hinten"scale="1 35.5 45.5" color="black" transparent="true">
       <a-animation attribute="material.opacity"
@@ -109,21 +130,19 @@
                    dur="7000"
                    fill="forwards"
                    from="1.0"
-                   to="0.0"
-      ></a-animation>
+                   to="0.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   delay="250000"
+                   dur="10000"
+                   fill="forwards"
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
     </a-box>
   </a-entity>
 
-  <<a-entity collada-model="#Wueste" position="0 0 0" rotation="0 0 0" scale="1 1 1" visible="true" id="Wueste"></a-entity>
- <!-- <a-entity collada-model="#Buehne" material="transparent:true; opacity:1;" position="0 0 0" rotation="0 0 0" scale="1 1 1" id="Buehne" material="color: #fff">
-    <!--   <a-animation attribute="material.opacity"
-        delay="10000"
-        dur="5000"
-        fill="forwards"
-        from="1.0"
-        to="0.0"
-      ></a-animation>-->
-  </a-entity>
+  <a-entity collada-model="#Wueste" position="0 0 0" rotation="0 0 0" scale="1 1 1" visible="true" id="Wueste"></a-entity>
   <a-entity collada-model="#Zuschauerbereich" position="0 0 0" rotation="0 0 0" scale="1 1 1" visible="true" id="Zuschauerraum"></a-entity>
 
   <a-entity collada-model="#Vorhang" position="0 0 25"  rotation="0 0 0"  visible="true" id="Vorhang_Links" sound=" src: url(Vorher.mp3); on:click">
@@ -165,6 +184,31 @@
                      dur="2000"
                      from="0 0 0"
                      to="-0.8 0.25 0">
+        </a-animation>
+        <a-animation attribute="rotation"
+                     begin="215000"
+                     dur="3000"
+                     from="0 0 -25"
+                     to="0 0 0">
+        </a-animation>
+        <a-animation attribute="position"
+                     begin="215000"
+                     dur="3000"
+                     from="-0.8 0.25 0"
+                     to="0 0 0">
+        </a-animation>
+
+        <a-animation attribute="rotation"
+                     begin="220000"
+                     dur="4000"
+                     from="0 0 25"
+                     to="0 0 25">
+        </a-animation>
+        <a-animation attribute="position"
+                     begin="220000"
+                     dur="4000"
+                     from="0 0 0"
+                     to="0.8 0.25 0">
         </a-animation>
       </a-entity>
       <a-entity collada-model="#Wang_Body" position="0 0 0" scale="0.7 0.7 0.7" visible="true" id="Koerper"></a-entity>
@@ -211,117 +255,118 @@
       </a-animation>
     </a-entity>
 
-    <a-entity collada-model="#Bein" position="0.25 -2.10 -0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_links">
-      <a-animation
-              attribute="position"
-              delay="49000"
-              dur="500"
-              from="0.25 -2.10 -0.3"
-              to="-0.2 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="49000"
-              dur="500"
-              from="0 0 0"
-              to="0 0 -25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="49500"
-              dur="1000"
-              from="-0.2 -2.10 -0.3"
-              to="0.7 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="49500"
-              dur="1000"
-              from="0 0 -25"
-              to="0 0 25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="50500"
-              dur="1000"
-              from="0.7 -2.10 -0.3"
-              to="-0.2 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="50500"
-              dur="1000"
-              from="0 0 25"
-              to="0 0 -25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="51500"
-              dur="1000"
-              from="-0.2 -2.10 -0.3"
-              to="0.7 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="51500"
-              dur="1000"
-              from="0 0 -25"
-              to="0 0 25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="52500"
-              dur="1000"
-              from="0.7 -2.10 -0.3"
-              to="-0.2 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="52500"
-              dur="1000"
-              from="0 0 25"
-              to="0 0 -25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="53500"
-              dur="1000"
-              from="-0.2 -2.10 -0.3"
-              to="0.7 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="53500"
-              dur="1000"
-              from="0 0 -25"
-              to="0 0 25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="54500"
-              dur="1000"
-              from="0.7 -2.10 -0.3"
-              to="-0.2 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="54500"
-              dur="1000"
-              from="0 0 25"
-              to="0 0 -25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="55500"
-              dur="1000"
-              from="-0.2 -2.10 -0.3"
-              to="0.7 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="55500"
-              dur="1000"
-              from="0 0 -25"
-              to="0 0 25"></a-animation>
-      <a-animation
-              attribute="position"
-              delay="56500"
-              dur="500"
-              from="0.7 -2.10 -0.3"
-              to="0.25 -2.10 -0.3"></a-animation>
-      <a-animation
-              attribute="rotation"
-              delay="56500"
-              dur="500"
-              from="0 0 25"
-              to="0 0 0"></a-animation>
-    </a-entity>
-    <a-entity collada-model="#Bein" position="0.25 -2.10 0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_rechts">
+    <a-entity id="Beine">
+      <a-entity collada-model="#Bein" position="0.25 -2.10 -0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_links">
+        <a-animation
+                attribute="position"
+                delay="49000"
+                dur="500"
+                from="0.25 -2.10 -0.3"
+                to="-0.2 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="49000"
+                dur="500"
+                from="0 0 0"
+                to="0 0 -25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="49500"
+                dur="1000"
+                from="-0.2 -2.10 -0.3"
+                to="0.7 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="49500"
+                dur="1000"
+                from="0 0 -25"
+                to="0 0 25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="50500"
+                dur="1000"
+                from="0.7 -2.10 -0.3"
+                to="-0.2 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="50500"
+                dur="1000"
+                from="0 0 25"
+                to="0 0 -25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="51500"
+                dur="1000"
+                from="-0.2 -2.10 -0.3"
+                to="0.7 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="51500"
+                dur="1000"
+                from="0 0 -25"
+                to="0 0 25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="52500"
+                dur="1000"
+                from="0.7 -2.10 -0.3"
+                to="-0.2 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="52500"
+                dur="1000"
+                from="0 0 25"
+                to="0 0 -25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="53500"
+                dur="1000"
+                from="-0.2 -2.10 -0.3"
+                to="0.7 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="53500"
+                dur="1000"
+                from="0 0 -25"
+                to="0 0 25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="54500"
+                dur="1000"
+                from="0.7 -2.10 -0.3"
+                to="-0.2 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="54500"
+                dur="1000"
+                from="0 0 25"
+                to="0 0 -25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="55500"
+                dur="1000"
+                from="-0.2 -2.10 -0.3"
+                to="0.7 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="55500"
+                dur="1000"
+                from="0 0 -25"
+                to="0 0 25"></a-animation>
+        <a-animation
+                attribute="position"
+                delay="56500"
+                dur="500"
+                from="0.7 -2.10 -0.3"
+                to="0.25 -2.10 -0.3"></a-animation>
+        <a-animation
+                attribute="rotation"
+                delay="56500"
+                dur="500"
+                from="0 0 25"
+                to="0 0 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#Bein" position="0.25 -2.10 0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_rechts">
       <a-animation
               attribute="position"
               delay="49000"
@@ -430,6 +475,20 @@
               dur="500"
               from="0 0 -25"
               to="0 0 0"></a-animation>
+    </a-entity>
+
+      <a-animation attribute="position"
+                   begin="203000"
+                   dur="7000"
+                   from="0 0 0"
+                   to="1.1 -1.1 0">
+      </a-animation>
+      <a-animation attribute="rotation"
+                   begin="203000"
+                   dur="7000"
+                   from="0 0 0"
+                   to="0 0 -90">
+      </a-animation>
     </a-entity>
 
     <a-image id="blase23" src="#blase23" position="-4 5 0" rotation="0 200 0" scale="5 3.5 0" opacity="0">
@@ -816,6 +875,12 @@
                  dur="8000"
                  from="0 0 0"
                  to="0 -95 0">
+    </a-animation>
+    <a-animation attribute="position"
+                 begin="203000"
+                 dur="7000"
+                 from="62 -8 13"
+                 to="62 -10 13">
     </a-animation>
   </a-entity>
 
@@ -1254,6 +1319,104 @@
               dur="500"
               from="0 0 25"
               to="0 0 0"></a-animation>
+
+
+      <a-animation
+              attribute="position"
+              delay="167500"
+              dur="500"
+              from="0.25 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="167500"
+              dur="500"
+              from="0 0 0"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="168000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="168000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="169000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="169000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="170000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="170000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="171000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="171000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="172000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="172000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="173000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="173000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="174000"
+              dur="500"
+              from="-0.2 -2.10 -0.3"
+              to="0.25 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="174000"
+              dur="500"
+              from="0 0 -25"
+              to="0 0 0"></a-animation>
     </a-entity>
     <a-entity collada-model="#Bein" position="0.25 -2.10 0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_rechts">
       <a-animation
@@ -1594,7 +1757,271 @@
               dur="500"
               from="0 0 -25"
               to="0 0 0"></a-animation>
+
+
+      <a-animation
+              attribute="position"
+              delay="167500"
+              dur="500"
+              from="0.25 -2.10 0.3"
+              to="0.70 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="167500"
+              dur="500"
+              from="0 0 0"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="168000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="168000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="169000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="169000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="170000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="170000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="171000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="171000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="172000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="172000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="173000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="173000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="174000"
+              dur="500"
+              from="0.7 -2.10 0.3"
+              to="0.25 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="174000"
+              dur="500"
+              from="0 0 25"
+              to="0 0 0"></a-animation>
     </a-entity>
+
+    <a-image id="blase24" src="#blase24" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="175000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="180000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase25" src="#blase25" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="180000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="190000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase26" src="#blase26" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="189000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="196000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase27" src="#blase27" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="196000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="201000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase28" src="#blase28" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="203000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="210000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase29" src="#blase29" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="210000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="217000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase30" src="#blase30" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="217000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="221000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase31" src="#blase31" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="221000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="227000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase32" src="#blase32" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="227000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="231000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase33" src="#blase33" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="231000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="234000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
+    <a-image id="blase34" src="#blase34" position="2.5 6 -2.3" rotation="0 30 0" scale="5 3.5 0" opacity="0">
+      <a-animation attribute="material.opacity"
+                   begin="234000"
+                   dur=100
+                   from="0.0"
+                   to="1.0">
+      </a-animation>
+      <a-animation attribute="material.opacity"
+                   begin="240000"
+                   dur=100
+                   from="1.0"
+                   to="0.0">
+      </a-animation>
+    </a-image>
+
 
     <a-image id="blase9" src="#blase9" position="3 5 0" rotation="0 0 0" scale="5 3.5 0" opacity="0">
     <a-animation attribute="material.opacity"
@@ -1649,12 +2076,13 @@
                    to="1.0">
       </a-animation>
       <a-animation attribute="material.opacity"
-                   begin="112000"
+                   begin="113000"
                    dur=100
                    from="1.0"
                    to="0.0">
       </a-animation>
     </a-image>
+
 
     <a-entity sound="src: url(Dialog/9.mp3); on:animationend; volume: 10.0">
     <a-animation
@@ -1691,6 +2119,107 @@
               to="1.2">
       </a-animation>
     </a-entity>
+
+    <a-entity sound="src: url(Dialog/24.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="174000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/25.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="179000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/26.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="189000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/27.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="195000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/28.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="202000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/29.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="209000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/30.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="216000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/31.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="220000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/32.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="226000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/33.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="230000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+    <a-entity sound="src: url(Dialog/34.mp3); on:animationend; volume: 10.0">
+      <a-animation
+              attribute="scale"
+              begin="233000"
+              from="1"
+              to="1.2">
+      </a-animation>
+    </a-entity>
+
+
 
     <a-animation attribute="position"
                  begin="60000"
@@ -1739,6 +2268,24 @@
                  dur="1000"
                  from="0 135 0"
                  to="0 70 0">
+    </a-animation>
+    <a-animation attribute="rotation"
+                 begin="167000"
+                 dur="1000"
+                 from="0 70 0"
+                 to="0 105 0">
+    </a-animation>
+    <a-animation attribute="position"
+                 begin="168000"
+                 dur="6000"
+                 from="63 -2 -0.6"
+                 to="64.5 -2 4.8">
+    </a-animation>
+    <a-animation attribute="rotation"
+                 begin="174000"
+                 dur="1000"
+                 from="0 105 0"
+                 to="0 60 0">
     </a-animation>
   </a-entity>
 
@@ -2868,6 +3415,104 @@
               dur="500"
               from="0 0 -25"
               to="0 0 0"></a-animation>
+
+
+      <a-animation
+              attribute="position"
+              delay="169500"
+              dur="500"
+              from="0.25 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="169500"
+              dur="500"
+              from="0 0 0"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="170000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="170000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="171000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="171000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="172000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="172000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="173000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="173000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="174000"
+              dur="1000"
+              from="-0.2 -2.10 -0.3"
+              to="0.7 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="174000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="175000"
+              dur="1000"
+              from="0.7 -2.10 -0.3"
+              to="-0.2 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="175000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="176000"
+              dur="500"
+              from="-0.2 -2.10 -0.3"
+              to="0.25 -2.10 -0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="176000"
+              dur="500"
+              from="0 0 -25"
+              to="0 0 0"></a-animation>
     </a-entity>
     <a-entity collada-model="#Bein" position="0.25 -2.10 0.3" scale="0.7 0.7 0.7" visible="true" id="Bein_rechts">
       <a-animation
@@ -3292,6 +3937,103 @@
               dur="500"
               from="0 0 25"
               to="0 0 0"></a-animation>
+
+      <a-animation
+              attribute="position"
+              delay="169500"
+              dur="500"
+              from="0.25 -2.10 0.3"
+              to="0.70 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="169500"
+              dur="500"
+              from="0 0 0"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="170000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="170000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="171000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="171000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="172000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="172000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="173000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="173000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="174000"
+              dur="1000"
+              from="0.7 -2.10 0.3"
+              to="-0.20 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="174000"
+              dur="1000"
+              from="0 0 25"
+              to="0 0 -25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="175000"
+              dur="1000"
+              from="-0.20 -2.10 0.3"
+              to="0.7 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="175000"
+              dur="1000"
+              from="0 0 -25"
+              to="0 0 25"></a-animation>
+      <a-animation
+              attribute="position"
+              delay="176000"
+              dur="500"
+              from="0.70 -2.10 0.3"
+              to="0.25 -2.10 0.3"></a-animation>
+      <a-animation
+              attribute="rotation"
+              delay="176000"
+              dur="500"
+              from="0 0 25"
+              to="0 0 0"></a-animation>
     </a-entity>
 
     <a-image id="blase14" src="#blase14" position="0 4.5 -2" rotation="0 90 0" scale="2.5 1.75 0" opacity="0">
@@ -3372,6 +4114,24 @@
             dur="1000"
             from="0 -55 0"
             to="0 45 0"></a-animation>
+    <a-animation attribute="rotation"
+                 begin="169000"
+                 dur="1000"
+                 from="0 45 0"
+                 to="0 -60 0">
+    </a-animation>
+    <a-animation attribute="position"
+                 begin="170000"
+                 dur="6000"
+                 from="66.8 -2 3.7"
+                 to="62.5 -2 -1.8">
+    </a-animation>
+    <a-animation attribute="rotation"
+                 begin="176000"
+                 dur="1000"
+                 from="0 -60 0"
+                 to="0 75 0">
+    </a-animation>
   </a-entity>
 
   <a-entity position="-43.35 16.7  0.75" visible="true" id="Zuschauer_Kamera">
@@ -3387,7 +4147,6 @@
       <a-camera id="Kamera_Zuschauer">
         <a-entity cursor position="0 0 -5"></a-entity>
       </a-camera>
-
       <a-animation
               attribute="position"
               delay="50000"
@@ -3402,7 +4161,7 @@
               to="0 -260 0"></a-animation>
     </a-entity>
   </a-entity>
-  <!--<a-entity id="Publikum" rotation="0 0 0">
+  <a-entity id="Publikum" rotation="0 0 0">
     <a-entity collada-model="#Zuschauer_A" position="0 0 0"                  rotation="0 0 0" scale="1 1 1" visible="true" id="1. Reihe"></a-entity>
     <a-entity collada-model="#Zuschauer_B" position="-2.55  0.5   -0.83"     rotation="0 0 0" scale="1 1 1" visible="true" id="2. Reihe"></a-entity>
     <a-entity collada-model="#Zuschauer_C" position="-5.1   1.5    0"        rotation="0 0 0" scale="1 1 1" visible="true" id="3. Reihe"></a-entity>
@@ -3428,47 +4187,55 @@
     <a-entity collada-model="#Zuschauer_C" position="-56.1  22.3   0"        rotation="0 0 0" scale="1 1 1" visible="true" id="23. Reihe"></a-entity>
     <a-entity collada-model="#Zuschauer_B" position="-58.65 23.3  -0.83"     rotation="0 0 0" scale="1 1 1" visible="true" id="24. Reihe"></a-entity>
     <a-entity collada-model="#Zuschauer_D" position="-61.2  24.4   0"        rotation="0 0 0" scale="1 1 1" visible="true" id="25. Reihe"></a-entity>
-  </a-entity-->
+  </a-entity>
   <a-entity id="Licht_Theater-Gesamt" visible="true">
     <a-entity id="Licht_Grundausleuchtung">
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 15" rotation="-1.72 16.62 -22.92" id="Scheinwerfer_1">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 7.5" rotation="0.00 10.89 -26.36" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 -7.5" rotation="0 -9.17 -26.36" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 -15" rotation="0.57 -16.62 -25.21" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9; " id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to=" 50.0" delay="2500"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -3477,40 +4244,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 10.06 21.9" rotation="83.08 -86.52 -116.88" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 12.78 21.9" rotation="84.22 -92.82 -113.45" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 15.46 21.9" rotation="81.93 -92.82 -107.72" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -3519,40 +4294,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 10.06 -21.9" rotation="-76.78 93.97 -126.62" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 12.78 -21.9" rotation="-84.80 104.28 -129.49" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 15.46 -21.9" rotation="-78.50 96.83 -115.74" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -3561,39 +4344,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1; " id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.8" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.8" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 5" rotation="0 0 -85" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
-          <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation></a-entity>
+          <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
+        <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
+        </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 -5" rotation="0 0 -85" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 -15" rotation="10 0 -85" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.8" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.8" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -3602,41 +4394,46 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-9 -89.95 89.95"
                   light="type:spot; intensity:0; angle:32 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 -8" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-22 -89.95 89.95"
                   light="type:spot; intensity:0; angle:21.3 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 8" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-22 -89.95 89.95"
                   light="type:spot; intensity:0; angle:21.3 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 16" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-9 -89.95 89.95"
                   light="type:spot; intensity:0; angle:32 ;penumbra:1;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
+          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
-    <a-entity position="40 23 0" light="type:point; intensity:0.05;"></a-entity>
-    <a-entity position="-40 23 0" light="type:point; intensity:0.05;"></a-entity>
+    <a-entity position="40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
+    <a-entity position="-40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
   </a-entity>
   <a-entity position="0 0 0" id="Zuschauer_Licht" visible="true">
     <a-entity position="40 23 0" light="type:point">
       <a-animation attribute="light.intensity" dur="6000" from="1.0" to="0.0"></a-animation>
       <a-animation attribute="light.intensity" delay="55000" dur="5000" from="0.0" to="0.15"></a-animation>
+      <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.15" to="0.0"></a-animation>
     </a-entity>
     <a-entity position="-40 23 0" light="type:point">
       <a-animation attribute="light.intensity" dur="6000" from="1.0" to="0.0"></a-animation>
       <a-animation attribute="light.intensity" delay="55000" dur="5000" from="0.0" to="0.15"></a-animation>
+      <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.15" to="0.0"></a-animation>
     </a-entity>
   </a-entity>
-  <a-entity position="0 100 0" light="type:directional; intensity:1;" id="Sonne" visible="false"></a-entity>
 
   <a-entity position="-13 8 3" sound="src: url(Vorher.mp3); on:animationend">
     <a-animation
