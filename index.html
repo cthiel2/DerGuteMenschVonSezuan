@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <title>Wang und die Götter</title>
+  <title>Der gute Mensch von Sezuan</title>
   <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
   <script src="https://aframe.io/releases/0.3.0/aframe-inspector.min.js"></script>
 </head>
@@ -13,6 +13,11 @@
   <a-assets>
 
     <img id="banner" src="Banner1.png">
+    <img id="ende" src="Ende.png">
+    <img id="screen1" src="Code1.png">
+    <img id="screen2" src="Code2.png">
+    <img id="screen3" src="Inspector.png">
+    <img id="screen4" src="Bild2.png">
     <img id="blase1" src="Sprechblasen_neu/1-W.png">
     <img id="blase2" src="Sprechblasen_neu/2-W.png">
     <img id="blase3" src="Sprechblasen_neu/3-W.png">
@@ -4145,7 +4150,6 @@
 
     <a-entity visible="true" id="Zuschauer_Kamera" position="26.13 -9.39 1.93" rotation="0 -90 0">
       <a-camera id="Kamera_Zuschauer">
-        <a-entity cursor position="0 0 -5"></a-entity>
       </a-camera>
       <a-animation
               attribute="position"
@@ -4464,53 +4468,67 @@
     </a-animation>
   </a-image>
 
+  <a-image id="ende" src="#ende" position="70.25 -3 1.14" rotation="0 110 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="250000"
+                 dur="3000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+    </a-image>
+
+  <a-image id="screen1" src="#screen1" position="70.25 -3 -4.48" rotation="0 60 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="250000"
+                 dur="3000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+  <a-image id="screen2" src="#screen2" position="73.22 -3 4.77" rotation="0 170 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="250000"
+                 dur="3000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+
+  <a-image id="screen3" src="#screen3" position="70.25 -0 -4.48" rotation="30 60 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="250000"
+                 dur="3000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+
+  <a-image id="screen4" src="#screen4" position="73.22 0 4.77" rotation="30 170 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="250000"
+                 dur="3000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+
+      <a-entity position="115 -23 0" sound="src: url(variante2.mp3); on:animationend" volume="20.0">
+        <a-animation
+                attribute="scale"
+                dur="1000"
+                fill="forwards"
+                delay="247000"
+                from="1"
+                to="1.1">
+    </a-animation>
+  </a-entity>
 
 </a-scene>
-<!--
-schrift?										 https://github.com/bryik/aframe-bmfont-text-component
-                                                https://github.com/ngokevin/aframe-text-component
-                                                https://github.com/mayognaise/aframe-html-shader
-                                                https://github.com/maxkrieger/aframe-textwrap-component
- Sound spielt von einer Quelle ab 				<a-sound src="src: url(click.mp3)" autoplay="false" position="0 2 5"></a-sound>
-Sound beginnt auf ein Event					 <sound="src: url(ticklelaugh.mp3); on: click">
-Animation										<a-animation attribute="position"
-                                               begin="click"
-                                              dur="10000"
-                                              fill="forwards"
-                                              from=" 0 180 0"
-                                              to="0 360 0"
-                                              repeat="0">
-licht dimmen und heller machen					 bei animation attribute="componentName.Syntax" also "light.intensity"
-wände durchsichtig 							 bei den wänden component material hinzufügen also < a-wand material="opacity: 1; transparent: true;"></a-wand> und <a-animation></a-animation> zwischen den entity-tags einfügen
-                                               <a-animation attribute="material.opacity"
-                                               begin="click"
-                                               delay="10000"
-                                              dur="2000"
-                                              fill="forwards"
-                                              from="1"
-                                              to="0"
-                                              repeat="0">
-Cursor										    <a-entity cursor="fuse: true; fuseTimeout: 500"
-                                               position="0 0 -1"
-                                               geometry="primitive: ring"
-                                               material="color: black; shader: flat">
-Objekte gucken auf etwas 						<a-entity id="dog" geometry="primitive: box" material="src: dog.png"
-                                             look-at="#squirrel"></a-entity>
-                                               <a-entity id="squirrel">
-                                                 <a-animation id="running" attribute="position" to="100 0 0"></a-animation>
-                                               </a-entity>
- Zeitlicher Ablauf:
- 0:00 Eventhandler click auf vorhang
- 0:00-0:10 Audioclip "Vorher.mp3" mit normalen lichtern
- 0:10-0:15 licht geht aus vorhang auf
- 0:15-0:25 Spots gehen an Audioclip "variante1.mp3" und "gong.mp3" nacheinander spielen
- 0:25-0:55 Gespräch auf der Bühne eventuell Audioclip"Dialog.mp3"
- 0:55-1:15 auf die Bühne geführt und wände transparent
-und so weiter  bla bla aber für samstag würds ja bis hier auch erstmal reichen
-
-
-zeiteinheit ist tick, also 60-90 pro sekunde
- -->
 
 </body>
 </html>
