@@ -14,10 +14,10 @@
 
     <img id="banner" src="Banner1.png">
     <img id="ende" src="Ende1.png">
-    <img id="screen1" src="Code1.png">
-    <img id="screen2" src="Code2.png">
-    <img id="screen3" src="Inspector.png">
-    <img id="screen4" src="Bild2.png">
+    <img id="screen1" src="Code1-1.png">
+    <img id="screen2" src="3ds-1.png">
+    <img id="screen3" src="Inspector-1.png">
+    <img id="screen4" src="Bild2-1.png">
     <img id="blase1" src="Sprechblasen_neu/1-W.png">
     <img id="blase2" src="Sprechblasen_neu/2-W.png">
     <img id="blase3" src="Sprechblasen_neu/3-W.png">
@@ -90,7 +90,7 @@
                    to="0.0">
       </a-animation>
       <a-animation attribute="material.opacity"
-                   delay="250000"
+                   delay="240000"
                    dur="10000"
                    fill="forwards"
                    from="0.0"
@@ -106,7 +106,7 @@
                    to="0.0">
       </a-animation>
       <a-animation attribute="material.opacity"
-                   delay="250000"
+                   delay="240000"
                    dur="10000"
                    fill="forwards"
                    from="0.0"
@@ -122,7 +122,7 @@
                    to="0.0">
       </a-animation>
       <a-animation attribute="material.opacity"
-                   delay="250000"
+                   delay="240000"
                    dur="10000"
                    fill="forwards"
                    from="0.0"
@@ -138,7 +138,7 @@
                    to="0.0">
       </a-animation>
       <a-animation attribute="material.opacity"
-                   delay="250000"
+                   delay="240000"
                    dur="10000"
                    fill="forwards"
                    from="0.0"
@@ -176,8 +176,30 @@
     <a-entity id="Oberkoerper">
       <a-entity id="Kopf" position="0 0 0" rotation="0 0 0">
         <a-entity collada-model="#Wang_Kopf" position="0 0 0" scale="0.7 0.7 0.7" visible="true" id="Kopf-Hut"></a-entity>
-        <a-entity collada-model="#Geschlossen" position="-0.44 1.68 0" scale="0.7 0.7 0.7" visible="true" id="Geschlossen"></a-entity>
-        <a-entity collada-model="#Offen" position="-0.44 1.66 0"  scale="0.7 0.7 0.7" visible="false" id="Offen"></a-entity>
+        <a-entity collada-model="#Geschlossen" position="-0.44 1.68 0" scale="0.7 0.7 0.7" visible="true" id="Geschlossen">
+          <a-animation attribute="visible"
+                       begin="180000"
+                       from="true"
+                       to="false">
+          </a-animation>
+          <a-animation attribute="visible"
+                       begin="195000"
+                       from="false"
+                       to="true">
+          </a-animation>
+        </a-entity>
+        <a-entity collada-model="#Offen" position="-0.44 1.66 0"  scale="0.7 0.7 0.7" visible="false" id="Offen">
+          <a-animation attribute="visible"
+                       begin="180000"
+                       from="false"
+                       to="true">
+          </a-animation>
+          <a-animation attribute="visible"
+                       begin="195000"
+                       from="true"
+                       to="false">
+          </a-animation>
+        </a-entity>
         <a-animation attribute="rotation"
                      begin="155000"
                      dur="2000"
@@ -202,7 +224,6 @@
                      from="-0.8 0.25 0"
                      to="0 0 0">
         </a-animation>
-
         <a-animation attribute="rotation"
                      begin="220000"
                      dur="4000"
@@ -4197,48 +4218,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 7.5" rotation="0.00 10.89 -26.36" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 -7.5" rotation="0 -9.17 -26.36" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="50.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="-28.22 34.91 -15" rotation="0.57 -16.62 -25.21" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to="1.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9; " id="Licht_1">
           <a-animation attribute="light.intensity" dur="5000" from="0.0" to=" 50.0" delay="2500"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -4247,48 +4268,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 10.06 21.9" rotation="83.08 -86.52 -116.88" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 12.78 21.9" rotation="84.22 -92.82 -113.45" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 15.46 21.9" rotation="81.93 -92.82 -107.72" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -4297,48 +4318,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 10.06 -21.9" rotation="-76.78 93.97 -126.62" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 12.78 -21.9" rotation="-84.80 104.28 -129.49" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="0 15.46 -21.9" rotation="-78.50 96.83 -115.74" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:13.079999999999998 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="1.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="1.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="1.0" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -4347,48 +4368,48 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1; " id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.8" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.8" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.8" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 5" rotation="0 0 -85" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.4" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 -5" rotation="0 0 -85" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.4" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity collada-model="#Scheinwerfer" position="40 22 -15" rotation="10 0 -85" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="0 -90 90"
                   light="type:spot; intensity:0; angle:25 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.8" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.8" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.8" to="0.0"></a-animation>
         </a-entity>
         <a-entity id="Licht_Quelle"position="1.6 1.05 0.59" rotation="0 -90 90"
                   light="type:point; decay:0.96; distance:1.9" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="50.0" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="50.0" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="50.0" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
@@ -4397,44 +4418,44 @@
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-9 -89.95 89.95"
                   light="type:spot; intensity:0; angle:32 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 -8" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_2">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-22 -89.95 89.95"
                   light="type:spot; intensity:0; angle:21.3 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 8" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_3">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-22 -89.95 89.95"
                   light="type:spot; intensity:0; angle:21.3 ;penumbra:1" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.4" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.4" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.4" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
       <a-entity  position="73.94 23.10 16" rotation="0 0 -90" scale="0.6 0.6 0.6" id="Scheinwerfer_4">
         <a-entity id="Licht_Spot"position="2.23 0.89 0.61" rotation="-9 -89.95 89.95"
                   light="type:spot; intensity:0; angle:32 ;penumbra:1;" id="Licht_1">
           <a-animation attribute="light.intensity" dur="6000" from="0.0" to="0.2" delay="9000"></a-animation>
-          <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.2" to="0.0"></a-animation>
+          <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.2" to="0.0"></a-animation>
         </a-entity>
       </a-entity>
     </a-entity>
-    <a-entity position="40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
-    <a-entity position="-40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
+    <a-entity position="40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
+    <a-entity position="-40 23 0" light="type:point; intensity:0.05;"><a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.05" to="0.0"></a-animation></a-entity>
   </a-entity>
   <a-entity position="0 0 0" id="Zuschauer_Licht" visible="true">
     <a-entity position="40 23 0" light="type:point">
       <a-animation attribute="light.intensity" dur="6000" from="1.0" to="0.0"></a-animation>
       <a-animation attribute="light.intensity" delay="55000" dur="5000" from="0.0" to="0.15"></a-animation>
-      <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.15" to="0.0"></a-animation>
+      <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.15" to="0.0"></a-animation>
     </a-entity>
     <a-entity position="-40 23 0" light="type:point">
       <a-animation attribute="light.intensity" dur="6000" from="1.0" to="0.0"></a-animation>
       <a-animation attribute="light.intensity" delay="55000" dur="5000" from="0.0" to="0.15"></a-animation>
-      <a-animation attribute="light.intensity" delay="250000" dur="10000" from="0.15" to="0.0"></a-animation>
+      <a-animation attribute="light.intensity" delay="240000" dur="10000" from="0.15" to="0.0"></a-animation>
     </a-entity>
   </a-entity>
 
@@ -4469,58 +4490,58 @@
 
   <a-image id="ende" src="#ende" position="69.5 -4.7 1.16" rotation="0 100 0" scale="2.5 1.75 0" opacity="0.0">
     <a-animation attribute="material.opacity"
-                 delay="250000"
-                 dur="3000"
+                 delay="245000"
+                 dur="5000"
+                 from="0.0"
+                 fill="forwards"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+
+  <a-image id="screen1" src="#screen1" position="70.34 -6.34 -0.75" rotation="-35 40 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="245000"
+                 dur="5000"
+                 fill="forwards"
+                 from="0.0"
+                 to="1.0">
+    </a-animation>
+  </a-image>
+  <a-image id="screen2" src="#screen2" position="71.05 -6.34 2.96" rotation="-35 160 0" scale="2.5 1.75 0" opacity="0.0">
+    <a-animation attribute="material.opacity"
+                 delay="245000"
+                 dur="5000"
                  fill="forwards"
                  from="0.0"
                  to="1.0">
     </a-animation>
   </a-image>
 
-  <a-image id="screen1" src="#screen1" position="69.72 -6.34 -0.24" rotation="-35 65 0" scale="2.5 1.75 0" opacity="0.0">
+  <a-image id="screen3" src="#screen3" position="70.34 -2.35 -0.75" rotation="35 40 0" scale="2.5 1.75 0" opacity="0.0">
     <a-animation attribute="material.opacity"
-                 delay="250000"
-                 dur="3000"
+                 delay="245000"
+                 dur="5000"
                  fill="forwards"
                  from="0.0"
                  to="1.0">
     </a-animation>
   </a-image>
-  <a-image id="screen2" src="#screen2" position="70.5 -6.34 2.68" rotation="-35 145 0" scale="2.5 1.75 0" opacity="0.0">
+  <a-image id="screen4" src="#screen4" position="70.67 -2.35 2.96" rotation="35 160 0" scale="2.5 1.75 0" opacity="0.0">
     <a-animation attribute="material.opacity"
-                 delay="250000"
-                 dur="3000"
-                 fill="forwards"
-                 from="0.0"
-                 to="1.0">
-    </a-animation>
-  </a-image>
-
-  <a-image id="screen3" src="#screen3" position="69.72 -2.35 -0.24" rotation="35 60 0" scale="2.5 1.75 0" opacity="0.0">
-    <a-animation attribute="material.opacity"
-                 delay="250000"
-                 dur="3000"
-                 fill="forwards"
-                 from="0.0"
-                 to="1.0">
-    </a-animation>
-  </a-image>
-  <a-image id="screen4" src="#screen4" position="70.5 -2.35 2.68" rotation="35 145 0" scale="2.5 1.75 0" opacity="0.0">
-    <a-animation attribute="material.opacity"
-                 delay="250000"
-                 dur="3000"
+                 delay="245000"
+                 dur="5000"
                  fill="forwards"
                  from="0.0"
                  to="1.0">
     </a-animation>
   </a-image>
 
-  <a-entity position="115 -23 0" sound="src: url(variante2.mp3); on:animationend" volume="20.0">
+  <a-entity position="70 -23 0" sound="src: url(variante2.mp3); on:animationend" volume="2.0">
     <a-animation
             attribute="scale"
             dur="1000"
             fill="forwards"
-            delay="247000"
+            delay="241000"
             from="1"
             to="1.1">
     </a-animation>
